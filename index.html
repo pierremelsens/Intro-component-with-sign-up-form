@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+
+</head>
+<body>
+
+<div id="computerFlex">
+  <header>
+    <h1>Learn to code by watching others</h1>
+    <p> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. </p>
+  </header>
+ 
+<main>
+  <button ID="freeTrialButton" href="#"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+
+  <form id="form" method="get" novalidate="novalidate">
+      <div class="form form__firstName">
+        <label for="name" aria></label>
+        <input class="input" type="text" placeholder="First Name" name="name" id="name" required>
+        <p id='nameError' class="errorText-hidden">First Name cannot be empty</p>
+      </div>
+      <div class="form form__LastName">
+        <label for="lastName" aria></label>
+        <input class="input" type="text" placeholder="Last Name" name="lastName" id="lastName" required>
+        <p id='lastNameError' class="errorText-hidden">Last Name cannot be empty</p>
+
+      </div>
+      <div class="form form__email">
+        <label for="email"></label>
+        <input class="input" type="email" placeholder="Email Adress" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        <p id='emailError' class="errorText-hidden">Looks like this is not an email</p>
+
+      </div>
+      <div class="form form__password">
+        <label for="pass"></label>
+        <input class="input" type="password" placeholder="Password" id="pass" name="password"
+        minlength="8" required>
+        <p id='passwordError' class="errorText-hidden">Password cannot be empty</p>
+
+    </div>
+      <div id="submitButton">
+        <input class="input" type="submit" value="CLAIM YOUR FREE TRIAL">
+      </div>
+    <div class="legal"> <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+    </div>
+  </form>
+  
+</main>
+</div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/pierremelsens">Pierre Melsens</a>.
+    </p>
+  </footer>
+  <script src="js/script.js"></script>
+
+</body>
+
+
+</html>
